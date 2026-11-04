@@ -1,0 +1,40 @@
+{
+  "name": "dsh-pixel-crt",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Dark CRT pixel skin for the conversation pane: hard 2px borders, block shadows, bitmap headings — scoped to the chat and composer regions.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "pixel",
+    "crt",
+    "skin",
+    "ui"
+  ]
+}
