@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-pixel-crt
+      name: dsh-pixel-crt
+      config: {}
